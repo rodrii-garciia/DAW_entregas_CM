@@ -84,6 +84,11 @@ public class GestionReservas {
 
     public static void mostrarReservas() {
         for (Reserva fecha : reservas) {
+
+            if(contador == 0) {
+                System.out.println("\nNo hay reservas creadas");
+            }
+
             if (fecha == null) {
                 return;
             } else {
